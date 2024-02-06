@@ -13,7 +13,7 @@ async function fetchAndDisplayProducts() {
             const productCard = document.createElement('div');
             productCard.classList.add('product-card');
 
-            ['name', 'price', 'description', 'date added'].forEach(property => {
+            ['Product Name', 'price', 'description', 'date added'].forEach(property => {
                 const element = document.createElement(property === 'name' ? 'h3' : 'p');
                 element.textContent = property === 'price' ? `Price: $${product[property]}` : `${property.charAt(0).toUpperCase() + property.slice(1)}: ${product[property]}`;
                 productCard.appendChild(element);
