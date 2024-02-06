@@ -15,7 +15,11 @@ async function fetchAndDisplayProducts() {
 
             ['Product Name', 'price', 'description', 'date added'].forEach(property => {
                 const element = document.createElement(property === 'name' ? 'h3' : 'p');
-                element.textContent = property === 'price' ? `Price: $${product[property]}` : `${property.charAt(0).toUpperCase() + property.slice(1)}: ${product[property]}`;
+                if (property === 'price') {
+                    element.textContent = `Price: ₱${product[property]}`;
+                } else {
+                    element.textContent = `${property.charAt(0).toUpperCase() + property.slice(1)}: ${product[property]}`;
+                }
                 productCard.appendChild(element);
             });
 
