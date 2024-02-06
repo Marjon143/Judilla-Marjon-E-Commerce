@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Lumpia",
+    "price": 15,
+    "description": "Lami Keyu",
+    "date added": "2024-02-20"
+  },
+  {
+    "id": 2,
+    "name": "front shock",
+    "price": 500,
+    "description": "jrp",
+    "date added": "2024-02-05"
+  },
+  {
+    "id": 3,
+    "name": "mio set",
+    "price": 39.99,
+    "description": "strong",
+    "date added": "2024-02-05"
+  },
+  {
+    "id": 4,
+    "name": "handle bar",
+    "price": 49.99,
+    "description": "strong",
+    "date added": "2024-02-05"
+  }
+]
