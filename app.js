@@ -1,4 +1,18 @@
 const apiUrl = 'data.json';
+const cartItems = []; // Initialize an empty array to store cart items
+
+// Function to render the cart table
+function renderCartTable() {
+    const cartTable = document.getElementById('cart-table');
+    const tbody = cartTable.querySelector('tbody');
+    tbody.innerHTML = '';
+
+    cartItems.forEach(item => {
+        const row = document.createElement('tr');
+        row.innerHTML = `<td>${item.name}</td><td>${item.quantity}</td>`;
+        tbody.appendChild(row);
+    });
+}
 
 async function fetchAndDisplayProducts() {
     try {
@@ -40,9 +54,36 @@ async function fetchAndDisplayProducts() {
             const addToCartButton = document.createElement('button');
             addToCartButton.textContent = 'Add to Cart';
             addToCartButton.classList.add('btn', 'btn-primary', 'mt-3'); // Adding a margin-top for spacing
+            
+            // Counter for the button
+            let counter = 0;
+            const counterDisplay = document.createElement('span');
+            counterDisplay.textContent = counter;
+            addToCartButton.appendChild(counterDisplay);
+
             addToCartButton.addEventListener('click', () => {
-                // Here you can implement functionality to add the product to the cart
-                console.log(`Product ${product['Product Name']} added to cart.`);
+                // Increase the counter when the button is clicked
+                counter++;
+                counterDisplay.textContent = counter;
+                console.log(`Product ${product['Product Name']} added to cart. Total: ${counter}`);
+
+                // Add item to cartItems array
+                const itemIndex = cartItems.findIndex(item => item.id === product.id);
+                if (itemIndex !== -1) {
+                    // If item already exists in cart, update its quantity
+                    cartItems[itemIndex].quantity++;
+                } else {
+                    // If item is not in cart, add it
+                    cartItems.push({
+                        id: product.id,
+                        name: product['Product Name'],
+                        price: product.price,
+                        quantity: 1
+                    });
+                }
+
+                // Update cart table
+                renderCartTable();
             });
 
             cardBody.appendChild(title);
@@ -62,4 +103,3 @@ async function fetchAndDisplayProducts() {
 }
 
 fetchAndDisplayProducts();
-s
