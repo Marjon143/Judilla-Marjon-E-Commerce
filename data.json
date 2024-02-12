@@ -5,7 +5,7 @@
     "price": 15,
     "description": "Lami Keyu",
     "date added": "2024-02-20",
-    "imageURL": "https://example.com/lumpia.jpg"
+    "imageURL": "https://static01.nyt.com/images/2023/12/15/multimedia/ND-Lumpia-lhfz/ND-Lumpia-lhfz-superJumbo.jpg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "price": 20,
     "description": "Pula Kaayu",
     "date added": "2024-02-05",
-    "imageURL": "https://example.com/hotdog.jpg"
+    "imageURL": "https://www.lawson-philippines.com/wp-content/uploads/2016/01/LawsonHotdogSandwich-800x533.jpg"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "price": 20,
     "description": "makalaway kaayu",
     "date added": "2024-04-05",
-    "imageURL": "https://example.com/siomai.jpg"
+    "imageURL": "https://i.pinimg.com/564x/6b/7d/7b/6b7d7be91260755915bdacc6cfb0a368.jpg"
   },
   {
     "id": 5,
