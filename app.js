@@ -14,7 +14,7 @@ async function fetchAndDisplayProducts() {
             productCard.classList.add('card');
 
             const img = document.createElement('img');
-            img.src = 'https://static01.nyt.com/images/2023/12/15/multimedia/ND-Lumpia-lhfz/ND-Lumpia-lhfz-superJumbo.jpg'; // Replace 'placeholder.jpg' with your image URL or leave it blank
+            img.src = product.imageURL || 'placeholder.jpg'; // If imageURL is not provided, use a default placeholder image
             img.classList.add('card-img-top');
 
             const cardBody = document.createElement('div');
