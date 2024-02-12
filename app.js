@@ -36,11 +36,6 @@ async function fetchAndDisplayProducts() {
             lastUpdated.classList.add('text-muted');
             lastUpdated.textContent = `Added on: ${product['date added']}`;
 
-            cardBody.appendChild(title);
-            cardBody.appendChild(price);
-            cardBody.appendChild(description);
-            cardBody.appendChild(lastUpdated);
-
             // Add "Add to Cart" button
             const addToCartButton = document.createElement('button');
             addToCartButton.textContent = 'Add to Cart';
@@ -50,6 +45,10 @@ async function fetchAndDisplayProducts() {
                 console.log(`Product ${product['Product Name']} added to cart.`);
             });
 
+            cardBody.appendChild(title);
+            cardBody.appendChild(price);
+            cardBody.appendChild(description);
+            cardBody.appendChild(lastUpdated);
             cardBody.appendChild(addToCartButton); // Appending the button after the lastUpdated element
 
             productCard.appendChild(img);
@@ -63,3 +62,4 @@ async function fetchAndDisplayProducts() {
 }
 
 fetchAndDisplayProducts();
+s

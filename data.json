@@ -4,35 +4,39 @@
     "Product Name": "Lumpia",
     "price": 15,
     "description": "Lami Keyu",
-    "date added": "2024-02-20"
+    "date added": "2024-02-20",
+    "imageURL": "https://example.com/lumpia.jpg"
   },
   {
     "id": 2,
     "Product Name": "hotdog",
     "price": 20,
     "description": "Pula Kaayu",
-    "date added": "2024-02-05"
+    "date added": "2024-02-05",
+    "imageURL": "https://example.com/hotdog.jpg"
   },
   {
     "id": 3,
     "Product Name": "siomai",
     "price": 20,
     "description": "makalaway kaayu",
-    "date added": "2024-04-05"
+    "date added": "2024-04-05",
+    "imageURL": "https://example.com/siomai.jpg"
   },
   {
     "id": 5,
     "Product Name": "shakoy",
     "price": 20,
     "description": "Taas kaayu",
-    "date added": "2024-04-10"
+    "date added": "2024-04-10",
+    "imageURL": "https://example.com/shakoy.jpg"
   },
   {
     "id": 4,
     "Product Name": "juice",
     "price": 10,
     "description": "Bugnaw kaayu",
-    "date added": "2024-02-23"
+    "date added": "2024-02-23",
+    "imageURL": "https://example.com/juice.jpg"
   }
-  
 ]
